@@ -141,6 +141,9 @@
                 <h1>Registrieren</h1>
                 <p>Bitte geben Sie Ihre Daten an!</p>
                 <hr>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+
                 <label for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
           
