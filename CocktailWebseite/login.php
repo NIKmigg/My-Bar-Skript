@@ -20,6 +20,7 @@
     }    
     else
     {
+        sleep(5);
         header('location:home.php');
 
         $errorMessage = "E-Mail oder Passwort ungültig!<br>";

@@ -42,7 +42,7 @@
         </nav>
 
         <!-- Der Hauptkontent -->
-        <div class="container text-center">       
+        <div class="container">       
             <div class="page-header">
                 <h1>Willkommen</h1>
             </div>

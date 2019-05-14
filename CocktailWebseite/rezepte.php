@@ -42,94 +42,143 @@
         </nav>
 
         <!-- Der Hauptkontent -->
-        <div class="container text-center">       
+        <div class="container">       
             <div class="page-header">
                 <h1>Rezepte</h1>
             </div>
             <div class="col-sm-12">
-                <p>
-                    Das ist ein Beispieltext!<br> Da ich nicht weiß was ich jetzt genau schreiben soll ... sag ich einfach mal du bist 
-                    coooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-                    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    .<br>
-                    ooooooooooooool!
-                </p>
+                
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Lemon</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
 
