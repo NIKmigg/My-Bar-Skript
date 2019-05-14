@@ -47,7 +47,7 @@
                 <h1>Rezepte</h1>
             </div>
             <div id="sucheButtonsDiv">
-                <button class="sucheButton aktiv" onclick="filterAuswahl('alle')">Alle</button>
+                <button class="sucheButton active" onclick="filterAuswahl('alle')">Alle</button>
                 <button class="sucheButton" onclick="filterAuswahl('longdrink')">Longdrinks</button>
                 <button class="sucheButton" onclick="filterAuswahl('cocktail')">Cocktails</button>
                 <button class="sucheButton" onclick="filterAuswahl('shot')">Shots</button>
@@ -225,15 +225,14 @@
 
             var sucheButtonsDiv = document.getElementById("sucheButtonsDiv");
             var buttons = sucheButtonsDiv.getElementsByClassName("sucheButton");
-            var i, ausgewaehlt;
 
             for(var i = 0; i < buttons.length; i++)
             {
                 buttons[i].addEventListener("click", function()
                     {
-                        ausgewaehlt = document.getElementsByClassName("aktiv");
-                        ausgewaehlt[0].className = ausgewaehlt[0].className.replace(" aktiv", "");
-                        this.className += " aktiv";
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
                     }
                 );
             }
