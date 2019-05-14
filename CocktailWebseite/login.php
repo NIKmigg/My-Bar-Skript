@@ -15,12 +15,14 @@
         $_SESSION['name'] = $user['Name'];
         $_SESSION['email'] = $user['Email'];
         $_SESSION['passwort'] = $user['Passwort'];
-        echo "Korrekt";
         
+        header('location:home.php');
     }    
     else
     {
+        header('location:home.php');
+
         $errorMessage = "E-Mail oder Passwort ungültig!<br>";
-        echo $errorMessage;
+        echo $errorMessage;    
     }
 ?>
