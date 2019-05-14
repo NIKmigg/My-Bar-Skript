@@ -48,7 +48,7 @@
             </div>
             <div class="col-sm-12">
                 <p>
-                    Das ist ein Beispieltext!<br> Da ich nicht weiß was ich jetzt genau schreiben soll ... sag ich einfach mal du bist 
+                    Das ist ein Beispieltexxxxt!<br> Da ich nicht weiß was ich jetzt genau schreiben soll ... sag ich einfach mal du bist 
                     coooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
                     ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
                     ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
