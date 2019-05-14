@@ -46,9 +46,15 @@
             <div class="page-header">
                 <h1>Rezepte</h1>
             </div>
+            <div id="sucheButtonsDiv">
+                <button class="sucheButton aktiv" onclick="filterAuswahl('alle')">Alle</button>
+                <button class="sucheButton" onclick="filterAuswahl('longdrink')">Longdrinks</button>
+                <button class="sucheButton" onclick="filterAuswahl('cocktail')">Cocktails</button>
+                <button class="sucheButton" onclick="filterAuswahl('shot')">Shots</button>
+            </div>
             <div class="col-sm-12">
                 
-                <div class="flip-box">
+                <div class="flip-box longdrink">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Vodka Lemon</h2>
@@ -61,10 +67,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-box">
+                <div class="flip-box cocktail">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
+                            <h2>Vodka Lemon Mango</h2>
                         </div>
                         <div class="flip-box-back">
                             <ul class="ulRezept">
@@ -74,101 +80,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-box">
+                <div class="flip-box shot">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <h2>Vodka Lemon</h2>
+                            <h2>Vodka</h2>
                         </div>
                         <div class="flip-box-back">
                             <ul class="ulRezept">
@@ -251,6 +166,76 @@
                 {
                     modal2.style.display = "none";
                 }
+            }
+
+            // Filtern von Div-Klassen per Buttons
+            filterAuswahl("alle")
+
+            function filterAuswahl(auswahl)
+            {
+                var x, i;
+                x = document.getElementsByClassName("flip-box");
+
+                if(auswahl == "alle")
+                {
+                    auswahl = "";
+                }
+
+                for(i = 0; i < x.length; i++)
+                {
+                    entfernenKlasse(x[i], "show");
+
+                    if(x[i].className.indexOf(auswahl) > -1)
+                    {
+                        hinzufuegenKlasse(x[i], "show");
+                    }
+                }
+            }
+
+            function hinzufuegenKlasse(element, name)
+            {
+                var i, array1, array2;
+                array1 = element.className.split(" ");
+                array2 = name.split(" ");
+
+                for(i = 0; i < array2.length; i++)
+                {
+                    if(array1.indexOf(array2[i]) == -1)
+                    {
+                        element.className += " " + array2[i];
+                    }
+                }
+            }
+
+            function entfernenKlasse(element, name)
+            {
+                var i, array1, array2;
+                array1 = element.className.split(" ");
+                array2 = name.split(" ");
+
+                for(i = 0; i < array2.length; i++)
+                {
+                    while(array1.indexOf(array2[i]) > -1)
+                    {
+                        array1.splice(array1.indexOf(array2[i]), 1);
+                    }
+                }
+                element.className = array1.join(" ");
+            }
+
+            var sucheButtonsDiv = document.getElementById("sucheButtonsDiv");
+            var buttons = sucheButtonsDiv.getElementsByClassName("sucheButton");
+            var i, ausgewaehlt;
+
+            for(var i = 0; i < buttons.length; i++)
+            {
+                buttons[i].addEventListener("click", function()
+                    {
+                        ausgewaehlt = document.getElementsByClassName("aktiv");
+                        ausgewaehlt[0].className = ausgewaehlt[0].className.replace(" aktiv", "");
+                        this.className += " aktiv";
+                    }
+                );
             }
         </script>
     </body>
