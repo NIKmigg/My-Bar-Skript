@@ -143,6 +143,10 @@
         display: none;
     }
       
+    .show {
+        display: block;
+    }
+
     .flip-box-inner {
         position: relative;
         width: 100%;
@@ -186,10 +190,6 @@
         font-size: 18px;
         color: black;
         display: block;
-    }
-
-    .show {
-        display: inline-block;
     }
 
     .sucheButton {
