@@ -53,7 +53,7 @@
                 <button class="sucheButton" onclick="filterAuswahl('shot')">Shots</button>
             </div>
             <div class="col-sm-12">
-                
+                <!-- Longdrinks -->
                 <div class="flip-box longdrink">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
@@ -67,6 +67,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="flip-box longdrink">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Vodka Maraquja</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cocktails -->
                 <div class="flip-box cocktail">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
@@ -80,6 +94,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Shots -->
                 <div class="flip-box shot">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
@@ -93,7 +108,19 @@
                         </div>
                     </div>
                 </div>
-            
+                <div class="flip-box shot">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Rum</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <ul class="ulRezept">
+                                <li><a>test</a></li>
+                                <li><a>test2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
