@@ -74,16 +74,17 @@
                             <h2>Vodka Maraquja</h2>
                         </div>
                         <div class="flip-box-back">
-                                <h3>Zutaten</h3>
-                                <table class="zutatenTabelle">
-                                    <tr>
-                                        <td><a>5 cl</a></td>
-                                        <td><a>testName</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a>test2</a></td>
-                                    </tr>
-                                </table>   
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a>5 cl</a></td>
+                                    <td><a>testName</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a>10 cl</a></td>
+                                    <td><a>testName2</a></td>
+                                </tr>
+                            </table>   
                         </div>
                     </div>
                 </div>
