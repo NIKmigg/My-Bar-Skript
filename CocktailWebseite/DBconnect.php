@@ -1,6 +1,9 @@
 <?php
-    $server = 'mysql:dbname=mybar;host=localhost';
-    $user = 'root';
+    $server = 'mysql:dbname=fi2017_jn_mybar;host=localhost';
+    $user = 'fi11';
+
+    //$server = 'mysql:dbname=mybar;host=localhost';
+    //$user = 'root';
     //$password = '';
     $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
     try
