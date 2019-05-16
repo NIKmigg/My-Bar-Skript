@@ -60,11 +60,21 @@
                             <h2>Vodka Lemon</h2>
                         </div>
                         <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <h3>Zutaten:</h3>
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Vodka</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Limettensaft</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 Schuss</a></td>
+                                    <td><a>Bitterlemon</a></td>
+                                </tr>
+                            </table> 
                         </div>
                     </div>
                 </div>
@@ -77,12 +87,12 @@
                             <h3>Zutaten</h3>
                             <table class="zutatenTabelle">
                                 <tr>
-                                    <td><a>5 cl</a></td>
-                                    <td><a>testName</a></td>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Vodka</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a>10 cl</a></td>
-                                    <td><a>testName2</a></td>
+                                    <td><a>12 cl</a></td>
+                                    <td><a>Maracujasaft</a></td>
                                 </tr>
                             </table>   
                         </div>
@@ -92,13 +102,88 @@
                 <div class="flip-box cocktail">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Vodka Lemon Mango</h2>
+                            <h2>Caipirinha</h2>
                         </div>
                         <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 1</a></td>
+                                    <td><a>Limette</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 TL</a></td>
+                                    <td><a>Rohrzucker</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 6 cl</a></td>
+                                    <td><a>Cachaça</a></td>
+                                </tr>
+                            </table>  
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box cocktail">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Sex on the Beach</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Vodka</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Pfirsich Likör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 8 cl</a></td>
+                                    <td><a>Cranberrysaft/-nektar</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 8 cl</a></td>
+                                    <td><a>Orangensaft</a></td>
+                                </tr>
+                            </table>  
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box cocktail">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Touch Down</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Vodka</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Apricot Brandy</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Orangensaft</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Zitronensaft</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 6 cl</a></td>
+                                    <td><a>Maracujasaft</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Grenadine</a></td>
+                                </tr>
+                            </table>  
                         </div>
                     </div>
                 </div>
@@ -106,26 +191,88 @@
                 <div class="flip-box shot">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Vodka</h2>
+                            <h2>Wolfsbite</h2>
                         </div>
                         <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Absinth</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Midori Melonenlikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Ananassaft</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 Spritzer</a></td>
+                                    <td><a>Zitronenlimonade</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 Spritzer</a></td>
+                                    <td><a>Grenadine</a></td>
+                                </tr>
+                            </table> 
                         </div>
                     </div>
                 </div>
                 <div class="flip-box shot">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Rum</h2>
+                            <h2>Kamikaze</h2>
                         </div>
                         <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Limettenlikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Orangenlikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Vodka</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box shot">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Wolfsbite</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Absinth</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Midori Melonenlikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Ananassaft</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 Spritzer</a></td>
+                                    <td><a>Zitronenlimonade</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 Spritzer</a></td>
+                                    <td><a>Grenadine</a></td>
+                                </tr>
+                            </table> 
                         </div>
                     </div>
                 </div>
