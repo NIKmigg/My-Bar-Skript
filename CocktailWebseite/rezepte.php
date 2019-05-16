@@ -99,6 +99,50 @@
                         
                     </div>
                 </div>
+                <div class="flip-box longdrink">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Cuba Libre</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Rum (weiss)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a>eine Hable</a></td>
+                                    <td><a>Limette</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a>der Rest</a></td>
+                                    <td><a>Cola</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box longdrink">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Gin Tonic</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Gin</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a></a></td>
+                                    <td><a>Tonic Water</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
                 <!-- Cocktails -->
                 <div class="flip-box cocktail">
                     <div class="flip-box-inner">
@@ -188,6 +232,70 @@
                         </div>
                     </div>
                 </div>
+                <div class="flip-box cocktail">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Pina Colada</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Cream of Coconut</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Rum (weiss)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Kokosmilch</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 2 cl</a></td>
+                                    <td><a>Sahne</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 9 cl</a></td>
+                                    <td><a>Ananassaft</a></td>
+                                </tr>
+                            </table>  
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box cocktail">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Mojito</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 2 BL</a></td>
+                                    <td><a>brauner Rohrzucker</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1-2</a></td>
+                                    <td><a>Limette</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Rum (weiss)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Rum (braun)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a></a></td>
+                                    <td><a>Sodawasser</a></td>
+                                </tr>
+                            </table>  
+                        </div>
+                    </div>
+                </div>
                 <!-- Shots -->
                 <div class="flip-box shot">
                     <div class="flip-box-inner">
@@ -272,6 +380,78 @@
                                 <tr>
                                     <td><a> 1 Spritzer</a></td>
                                     <td><a>Grenadine</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box shot">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Bloody Brain</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Pfirsichlikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 0,7 cl</a></td>
+                                    <td><a>Irischer Cremelikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 0,3 cl</a></td>
+                                    <td><a>Grenadine</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box shot">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Shot Tequila silver</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 4 cl</a></td>
+                                    <td><a>Tequila (silver)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 Prise</a></td>
+                                    <td><a>Salz</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box shot">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2>Electric Blue</h2>
+                        </div>
+                        <div class="flip-box-back">
+                            <h3>Zutaten</h3>
+                            <table class="zutatenTabelle">
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Blue Curaçao</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Rum (weiss)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Kokoslikör</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a> 1 cl</a></td>
+                                    <td><a>Zitronensaft</a></td>
                                 </tr>
                             </table> 
                         </div>
