@@ -96,6 +96,7 @@
                                 </tr>
                             </table>   
                         </div>
+                        
                     </div>
                 </div>
                 <!-- Cocktails -->
