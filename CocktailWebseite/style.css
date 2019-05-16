@@ -134,7 +134,7 @@
 
     .flip-box {
         background-color: transparent;
-        width: 300px;
+        width: 80%;
         height: 200px;
         border: 1px solid #f1f1f1;
         perspective: 1000px;
@@ -175,6 +175,7 @@
     .flip-box-back {
         background-color: #474e5d;
         color: white;
+        text-align: left;
         transform: rotateX(180deg);
     }
 
@@ -185,7 +186,7 @@
     }
 
     .ulRezept li a {
-        padding: 12px;
+        padding-left: 5%;
         text-decoration: none;
         font-size: 18px;
         color: black;

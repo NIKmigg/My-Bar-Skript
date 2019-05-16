@@ -61,6 +61,7 @@
                         </div>
                         <div class="flip-box-back">
                             <ul class="ulRezept">
+                                <h3>Zutaten:</h3>
                                 <li><a>test</a></li>
                                 <li><a>test2</a></li>
                             </ul>
@@ -73,10 +74,16 @@
                             <h2>Vodka Maraquja</h2>
                         </div>
                         <div class="flip-box-back">
-                            <ul class="ulRezept">
-                                <li><a>test</a></li>
-                                <li><a>test2</a></li>
-                            </ul>
+                                <h3>Zutaten</h3>
+                                <table class="zutatenTabelle">
+                                    <tr>
+                                        <td><a>5 cl</a></td>
+                                        <td><a>testName</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a>test2</a></td>
+                                    </tr>
+                                </table>   
                         </div>
                     </div>
                 </div>
