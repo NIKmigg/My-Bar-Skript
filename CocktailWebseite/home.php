@@ -185,8 +185,27 @@
 
         <!-- Die Footer -->
         <footer class="container-fluid text-center">
-            <div class="upper">
-                <p>Footer Text</p>
+            <div class="footerOrdner">
+                <div class="col-sm-6">
+                    <table class="footerTabelle">
+                        <tr>
+                            <td><h3>Kontakt</h3></td>
+                        </tr>
+                        <tr>   
+                            <td><a>Jennifer Meißner<br>Niklas Miggenrieder</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-6">
+                    <table class="footerTabelle">
+                        <tr>
+                            <td><h3>Hilfe</h3></td>
+                        </tr>
+                        <tr>   
+                            <td><a>Bei Fragen oder Problemen,<br>wende dich bitte an die Entwickler<br>www.miggenriederniklas@dv-schulen.de</a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </footer>
         
