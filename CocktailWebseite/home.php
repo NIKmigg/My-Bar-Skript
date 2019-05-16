@@ -48,7 +48,10 @@
             </div>
             <div class="col-sm-12">
                 <p>
-                    Das ist ein Beispieltexxxxt!<br> Da ich nicht weiß was ich jetzt genau schreiben soll ... sag ich einfach mal du bist 
+                    Lust auf'n Drink?<br> Dann bist du hier genau richtig! ... <br><br>
+                    Hier findest du leckere Rezepte für Longdrinks, Cocktails und natürlich Shots.<br><br>
+                    Wenn du keine Lust auf bereits bestehende Rezepte hast, kannst du dir ganz einfach deinen eigenen Drink mixen!<br>
+                    Gespeichert werden deine Eigenkreationen auch ...<br><br>
                     coooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
                     ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
                     ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
