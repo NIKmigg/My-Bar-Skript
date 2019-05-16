@@ -136,7 +136,7 @@
         <!-- Registrieren -->
         <div id="id01" class="modalRegAnm">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Schließen">&times;</span>
-            <form class="modalRegAnm-content">
+            <form class="modalRegAnm-content" method="POST" action="registrieren.php">
               <div class="reg-container">
                 <h1>Registrieren</h1>
                 <p>Bitte geben Sie Ihre Daten an!</p>
