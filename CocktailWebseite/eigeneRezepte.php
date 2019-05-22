@@ -14,7 +14,7 @@
         <!-- Die Überschrift, evtl ein Logo oder so -->
         <div class="logo">
             <div class="container-fluid text-center">
-                <img src="logo2.png" alt="logo">
+                <img class="bildLogo" src="images/logo2.png" alt="logo">
             </div>
         </div>
 

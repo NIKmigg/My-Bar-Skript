@@ -15,7 +15,7 @@
         <!-- Die Überschrift, evtl ein Logo oder so -->
         <div class="logo">
             <div class="container-fluid text-center">
-                <img src="logo2.png" alt="logo">
+                <img class="bildLogo" src="images/logo2.png" alt="logo">
             </div>
         </div>
 
@@ -53,15 +53,16 @@
                     Die erstellten Rezepte findest du bei Eigene Rezepte ...
                 </p>
                 <div>
-                    Menge: <input type="text" id="textFieldMenge">
-                    Zutat: <input type="text" onkeyup="showZutat(this.value)" id="textFieldZutat">
+                    Menge: <input type="text" id="textFieldMenge" placeholder="z.B. 2 cl">
+                    Zutat: <input type="text" onkeyup="showZutat(this.value)" id="textFieldZutat" placeholder="z.B. Zitronensaft">
                     <div class="vorschlag">
                         <h4>Vorschläge:</h4>
-                        <span id="txtHint"/>
+                        <span id="txtHint"></span>
                     </div>  
-                    <button type="button" class="sucheButton" onclick="zutatHinzufuegen()"><span>Hinzufügen</span></button>
-
+                    <button type="submit" class="sucheButton" onclick="zutatHinzufuegen()"><span>Hinzufügen</span></button>
+                    
                     <div id="mixer">
+                        <img class="shaker" src="images/shaker.png" alt="shaker">
                         <div id="zutat1"></div>
                         <div id="zutat2"></div>
                         <div id="zutat3"></div>

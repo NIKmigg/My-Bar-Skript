@@ -1,5 +1,131 @@
     .logo {
-        background-color: #474e5d;
+        background-color: #474e5de3;
+    }
+
+    .shaker {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-width: 400px;
+        max-height: 700px;
+    } 
+
+    .shaker:hover {
+        animation: shake 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    .bildLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-width: 650px;
+        max-height: 200px;
+    }
+
+    #mixer {
+        position: relative;
+    }
+
+    #zutat1, #zutat2, #zutat3, #zutat4, #zutat5, #zutat6, #zutat7, #zutat8, #zutat9, #zutat10 {
+        left: 50%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #zutat1 {
+        position: absolute;
+        top: 90%;
+        transform: translate(-50%, -90%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat2 {
+        position: absolute;
+        top: 85%;
+        transform: translate(-50%, -85%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat3 {
+        position: absolute;
+        top: 80%;
+        transform: translate(-50%, -80%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat4 {
+        position: absolute;
+        top: 75%;
+        transform: translate(-50%, -75%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat5 {
+        position: absolute;
+        top: 70%;
+        transform: translate(-50%, -70%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat6 {
+        position: absolute;
+        top: 65%;
+        transform: translate(-50%, -65%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat7 {
+        position: absolute;
+        top: 60%;
+        transform: translate(-50%, -60%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat8 {
+        position: absolute;
+        top: 55%;
+        transform: translate(-50%, -55%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat9 {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #zutat10 {
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -45%);
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 
     /* Style für die Navigation */
@@ -49,6 +175,7 @@
     body {
         background-image: url(images/hintergrundbild.jpg);
         background-attachment: fixed;
+        background-size: cover;
     }
 
     .page-header {
@@ -60,6 +187,9 @@
         font-size: 12pt;
         text-justify: auto;
         text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px -2px rgba(255, 255, 255, 0.877);
     }
 
     button {
@@ -243,6 +373,7 @@
         transition: all 0.5s;
         width: 150px;
         height: 50px;
+        text-decoration: none;
     }
 
     .sucheButton span {
@@ -275,7 +406,7 @@
         border-radius: 5px;
         background-color: lightgray;
         margin: 10px;
-        width: 70px;
+        width: 90px;
         height: 50px;
     }
 
