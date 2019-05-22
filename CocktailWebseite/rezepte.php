@@ -47,10 +47,10 @@
                 <h1>Rezepte</h1>
             </div>
             <div id="sucheButtonsDiv">
-                <button class="sucheButton active" onclick="filterAuswahl('alle')">Alle</button>
-                <button class="sucheButton" onclick="filterAuswahl('longdrink')">Longdrinks</button>
-                <button class="sucheButton" onclick="filterAuswahl('cocktail')">Cocktails</button>
-                <button class="sucheButton" onclick="filterAuswahl('shot')">Shots</button>
+                <button class="sucheButton active" onclick="filterAuswahl('alle')"><span>Alle</span></button>
+                <button class="sucheButton" onclick="filterAuswahl('longdrink')"><span>Longdrinks</span></button>
+                <button class="sucheButton" onclick="filterAuswahl('cocktail')"><span>Cocktails</span></button>
+                <button class="sucheButton" onclick="filterAuswahl('shot')"><span>Shots</span></button>
             </div>
             <div class="col-sm-12">
                 <!-- Longdrinks -->
@@ -58,6 +58,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Vodka Lemon</h2>
+                            <img src="images/VodkaLemon.jpg" alt="Vodka Lemon" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -82,6 +83,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Vodka Maraquja</h2>
+                            <img src="images/VodkaMaracuja.jpg" alt="Vodka Maraquja" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -103,6 +105,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Cuba Libre</h2>
+                            <img src="images/CubaLibre.jpg" alt="Cuba Libre" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -126,7 +129,8 @@
                 <div class="flip-box longdrink">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Gin Tonic</h2>
+                            <h2>Gin Tonic</h2>                   
+                            <img src="images/GinTonic.jpg" alt="Gin Tonic" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -148,6 +152,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Caipirinha</h2>
+                            <img src="images/Caipirinha.jpg" alt="Caipirinha" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -172,6 +177,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Sex on the Beach</h2>
+                            <img src="images/SexOnTheBeach.jpg" alt="Sex on the Beach" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -200,6 +206,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Touch Down</h2>
+                            <img src="images/TouchDown.jpg" alt="Touch Down" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -236,6 +243,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Pina Colada</h2>
+                            <img src="images/PinaColada.jpg" alt="Pina Colada" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -268,6 +276,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Mojito</h2>
+                            <img src="images/Mojito.jpg" alt="Mojito" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -300,39 +309,8 @@
                 <div class="flip-box shot">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Wolfsbite</h2>
-                        </div>
-                        <div class="flip-box-back">
-                            <h3>Zutaten</h3>
-                            <table class="zutatenTabelle">
-                                <tr>
-                                    <td><a> 1 cl</a></td>
-                                    <td><a>Absinth</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a> 1 cl</a></td>
-                                    <td><a>Midori Melonenlikör</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a> 2 cl</a></td>
-                                    <td><a>Ananassaft</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a> 1 Spritzer</a></td>
-                                    <td><a>Zitronenlimonade</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a> 1 Spritzer</a></td>
-                                    <td><a>Grenadine</a></td>
-                                </tr>
-                            </table> 
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box shot">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
                             <h2>Kamikaze</h2>
+                            <img src="images/Kamikaze.jpeg" alt="Kamikaze" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -357,6 +335,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Wolfsbite</h2>
+                            <img src="images/Wolfsbite.jpg" alt="Wolfsbite" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -389,6 +368,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Bloody Brain</h2>
+                            <img src="images/BloodyBrain.jpg" alt="Bloody Brain" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -412,7 +392,8 @@
                 <div class="flip-box shot">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <h2>Shot Tequila silver</h2>
+                            <h2>Shot Tequila Silver</h2>
+                            <img src="images/ShotTequilaSilver.jpg" alt="Shot Tequila Silver" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>
@@ -433,6 +414,7 @@
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
                             <h2>Electric Blue</h2>
+                            <img src="images/ElectricBlue.jpg" alt="Electric Blue" class="rezeptImg-right">
                         </div>
                         <div class="flip-box-back">
                             <h3>Zutaten</h3>

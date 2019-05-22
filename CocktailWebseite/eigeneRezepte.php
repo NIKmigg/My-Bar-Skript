@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <title>My-Bar | Mixer</title>
+        <title>My-Bar | Eigene Rezepte</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
     </head>
     <body>
         <!-- Die Überschrift, evtl ein Logo oder so -->
@@ -32,8 +31,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="home.php">Home</a></li>
                     <li><a href="rezepte.php">Rezepte</a></li>
-                    <li class="active"><a href="mixer.php">Mixer</a></li>
-                    <li><a href="eigeneRezepte.php">Eigene Rezepte</a></li>
+                    <li><a href="mixer.php">Mixer</a></li>
+                    <li class="active"><a href="eigeneRezepte.php">Eigene Rezepte</a></li>
                 </ul>
                 <div class="btn-group navbar-right">
                     <button class="btn navbar-btn" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-user"></span> Registrieren</button>
@@ -45,44 +44,19 @@
         <!-- Der Hauptkontent -->
         <div class="container">       
             <div class="page-header">
-                <h1>Mixer</h1>
+                <h1>Eigene Rezepte</h1>
             </div>
             <div class="col-sm-12">
                 <p>
-                    Hier kannst du deine eigenen Rezepte erstellen!<br>
-                    Die erstellten Rezepte findest du bei Eigene Rezepte ...
-                </p>
-                <div>
-                    Menge: <input type="text" id="textFieldMenge">
-                    Zutat: <input type="text" onkeyup="showZutat(this.value)" id="textFieldZutat">
-                    <div class="vorschlag">
-                        <h4>Vorschläge:</h4>
-                        <span id="txtHint"/>
-                    </div>  
-                    <button type="button" class="sucheButton" onclick="zutatHinzufuegen()"><span>Hinzufügen</span></button>
-
-                    <div id="mixer">
-                        <div id="zutat1"></div>
-                        <div id="zutat2"></div>
-                        <div id="zutat3"></div>
-                        <div id="zutat4"></div>
-                        <div id="zutat5"></div>
-                        <div id="zutat6"></div>
-                        <div id="zutat7"></div>
-                        <div id="zutat8"></div>
-                        <div id="zutat9"></div>
-                        <div id="zutat10"></div>
-                    </div>
                     
-                    <button type="button" class="sucheButton" onclick="mixerLeeren()"><span>Leeren</span></button>
-                </div>
+                </p>
             </div>
         </div>
 
         <!-- Registrieren -->
         <div id="id01" class="modalRegAnm">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Schließen">&times;</span>
-            <form class="modalRegAnm-content">
+            <form class="modalRegAnm-content" method="POST" action="registrieren.php">
               <div class="reg-container">
                 <h1>Registrieren</h1>
                 <p>Bitte geben Sie Ihre Daten an!</p>
@@ -158,7 +132,6 @@
         <script>
             var modal1 = document.getElementById('id01');
             var modal2 = document.getElementById('id02');
-            var zaehler = 1;
             
             // Schließen beim klicken außerhalb der Box
             window.onclick = function(event) 
@@ -170,50 +143,6 @@
                 else if (event.target == modal2) 
                 {
                     modal2.style.display = "none";
-                }
-            }
-
-            function showZutat(str)
-            {
-                if(str.length == 0)
-                {
-                    document.getElementById("txtHint").innerHTML = "";
-                    return;
-                }
-                else
-                {
-                    var xmlhttp = new XMLHttpRequest();
-                    xmlhttp.onreadystatechange = function()
-                    {
-                        if(this.readyState == 4 && this.status == 200)
-                        {
-                            document.getElementById("txtHint").innerHTML = this.responseText;
-                        }
-                    };
-                    xmlhttp.open("GET", "vorschlaege.php?q=" + str, true);
-                    xmlhttp.send();
-                }
-            }
-
-            function zutatHinzufuegen()
-            {
-                var menge = document.getElementById("textFieldMenge").value;
-                var zutat = document.getElementById("textFieldZutat").value;
-
-                if(zutat.length != 0 && menge.length != 0)
-                {
-                    document.getElementById("zutat" + zaehler).innerHTML = menge + " " + zutat;
-                    zaehler++;
-                }       
-            }
-
-            function mixerLeeren()
-            {
-                zaehler = 1;
-
-                for(var i = 1; i <= 10; i++)
-                {
-                    document.getElementById("zutat" + i).innerHTML = "";
                 }
             }
         </script>

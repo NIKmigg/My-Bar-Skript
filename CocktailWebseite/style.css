@@ -40,12 +40,23 @@
         text-decoration: none;
     }
 
+    h4 {
+        text-align: left;
+        margin: 10px;
+        display: inline-block;
+    }
+
     body {
-        background-color: rgb(242, 243, 244);
+        background-image: url(images/hintergrundbild.jpg);
+        background-attachment: fixed;
+    }
+
+    .page-header {
+        border-color: gray;
     }
 
     .container {
-        background-color: rgb(242, 243, 244);
+        background-color: rgba(255, 255, 255, 0.877);
         font-size: 12pt;
         text-justify: auto;
         text-align: center;
@@ -90,14 +101,14 @@
     }
 
     .modalRegAnm {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 2; /* Sit on top */
+        display: none; 
+        position: fixed;
+        z-index: 2; 
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
         background-color: #474e5d;
         padding-top: 50px;
     }
@@ -105,9 +116,9 @@
     /* Modal Content/Box */
     .modalRegAnm-content {
         background-color: #fefefe;
-        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        margin: 5% auto 15% auto; 
         border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
+        width: 80%; 
     }
 
     .close {
@@ -150,11 +161,11 @@
         background-color: transparent;
         width: 80%;
         height: 200px;
-        border: 1px solid #f1f1f1;
         perspective: 1000px;
         margin-left: auto;
         margin-right: auto;
         display: none;
+        margin-bottom: 10px;
     }
       
     .show {
@@ -222,22 +233,103 @@
 
     .sucheButton {
         display: inline-block;
-        outline: none;
         text-align: center;
         text-decoration: none;
         border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
+        border-radius: 4px;
         margin: 10px;
         margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.5s;
+        width: 150px;
+        height: 50px;
     }
 
-    .sucheButton:hover {
-        background-color: gray;
+    .sucheButton span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
     }
 
-    .sucheButton:active {
-        background-color: gray;
-        box-shadow: 0 5px #666;
-        transform:  translateY(4px);
+    .sucheButton span:after {
+        content:'\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .sucheButton:hover span {
+        padding-right: 25px;
+    }
+
+    .sucheButton:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    #textFieldMenge {
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: lightgray;
+        margin: 10px;
+        width: 70px;
+        height: 50px;
+    }
+
+    #textFieldZutat {
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: lightgray;
+        margin: 10px;
+        width: auto;
+        height: 50px;
+    }
+
+    .vorschlag {
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: rgba(205, 202, 50, 0.39);
+        margin: 10px;
+        width: auto;
+    }
+
+    #geschichte-text{
+        text-align: justify;
+    }
+
+    .geschichte-zitat{
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+        font-style: italic;
+    }
+
+    /* Image Styles Home */
+    #img1, #img2, #img3{
+        border-radius: 7px;
+        width: 150px;
+        margin: 10px;       
+    }
+
+    #img1{
+        float: left;   
+        margin-top: 25px;     
+    }
+
+    #img2{
+        float: right;
+    }
+
+    #img3{
+        float:left;
+        margin-top: 5px;
+    }
+
+    /*  Styles Rezepte */
+    .rezeptImg-right{
+        border-radius: 7px;
+        width: 170px;
     }
