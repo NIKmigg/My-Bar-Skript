@@ -160,6 +160,9 @@
             var modal1 = document.getElementById('id01');
             var modal2 = document.getElementById('id02');
             var zaehler = 1;
+            //Arrays für Zutaten und Mengen
+            var zutaten = [];
+            var mengen = [];
             
             // Schließen beim klicken außerhalb der Box
             window.onclick = function(event) 
@@ -196,6 +199,7 @@
                 }
             }
 
+            //Mixer
             function zutatHinzufuegen()
             {
                 var menge = document.getElementById("textFieldMenge").value;
@@ -205,11 +209,18 @@
                 {
                     document.getElementById("zutat" + zaehler).innerHTML = menge + " " + zutat;
                     zaehler++;
-                }       
+                }     
+
+                //Zutaten und Mengen hinzufügen
+                zutaten.push(zutat);
+                mengen.push(menge);    
             }
 
             function mixerLeeren()
             {
+                //Arrays löschen und Zähler zurücksetzen
+                zutaten = [];
+                mengen = [];
                 zaehler = 1;
 
                 for(var i = 1; i <= 10; i++)
