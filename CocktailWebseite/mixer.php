@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="javascript.js"></script>
     
     </head>
-    <body>
+    <body onload="navButtons()">
         <!-- Die Überschrift, evtl ein Logo oder so -->
         <div class="logo">
             <div class="container-fluid text-center">
@@ -35,9 +36,16 @@
                     <li class="active"><a href="mixer.php">Mixer</a></li>
                     <li><a href="eigeneRezepte.php">Eigene Rezepte</a></li>
                 </ul>
-                <div class="btn-group navbar-right">
-                    <button class="btn navbar-btn" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-user"></span> Registrieren</button>
-                    <button class="btn navbar-btn" onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Einloggen</button>
+                <div id="navButtonsAnReg">
+                    <div class="btn-group navbar-right">
+                        <button class="btn navbar-btn" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-user"></span> Registrieren</button>
+                        <button class="btn navbar-btn" onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Einloggen</button>
+                    </div>
+                </div>
+                <div id="navButtonsAb">
+                    <div class="btn-group navbar-right">
+                        <button class="btn navbar-btn" onclick="abmelden()"><span class="glyphicon glyphicon-log-out"></span> Ausloggen</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -52,6 +60,7 @@
                     Hier kannst du deine eigenen Rezepte erstellen!<br>
                     Die erstellten Rezepte findest du bei Eigene Rezepte ...
                 </p>
+
                 <div>
                     Menge: <input type="text" id="textFieldMenge" placeholder="z.B. 2 cl">
                     Zutat: <input type="text" onkeyup="showZutat(this.value)" id="textFieldZutat" placeholder="z.B. Zitronensaft">
@@ -59,7 +68,7 @@
                         <h4>Vorschläge:</h4>
                         <span id="txtHint"></span>
                     </div>  
-                    <button type="submit" class="sucheButton" onclick="zutatHinzufuegen()"><span>Hinzufügen</span></button>
+                    <button type="button" class="sucheButton" onclick="zutatHinzufuegen()"><span>Hinzufügen</span></button>
                     
                     <div id="mixer">
                         <img class="shaker" src="images/shaker.png" alt="shaker">
@@ -76,6 +85,13 @@
                     </div>
                     
                     <button type="button" class="sucheButton" onclick="mixerLeeren()"><span>Leeren</span></button>
+                    <br>
+                    Name:<br> <input type="text" id="textFieldName" placeholder="z.B. Touchdown">
+                    <br>
+                    Anleitung:<br> <input type="text" id="textFieldAnleitung" placeholder="z.B. Fülle 2 cl Vodka mit Eiswürfel ...">
+                    <br>
+                    <!-- Bild: -->
+                    <button type="submit" class="sucheButton" onclick="rezeptSpeichern()"><span>Speichern</span></button>
                 </div>
             </div>
         </div>
@@ -83,7 +99,7 @@
         <!-- Registrieren -->
         <div id="id01" class="modalRegAnm">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Schließen">&times;</span>
-            <form class="modalRegAnm-content">
+            <form class="modalRegAnm-content" method="POST" action="registrieren.php">
               <div class="reg-container">
                 <h1>Registrieren</h1>
                 <p>Bitte geben Sie Ihre Daten an!</p>
@@ -155,79 +171,5 @@
                 </div>
             </div>
         </footer>
-        
-        <script>
-            var modal1 = document.getElementById('id01');
-            var modal2 = document.getElementById('id02');
-            var zaehler = 1;
-            //Arrays für Zutaten und Mengen
-            var zutaten = [];
-            var mengen = [];
-            
-            // Schließen beim klicken außerhalb der Box
-            window.onclick = function(event) 
-            {
-                if (event.target == modal1) 
-                {
-                    modal1.style.display = "none";
-                }
-                else if (event.target == modal2) 
-                {
-                    modal2.style.display = "none";
-                }
-            }
-
-            function showZutat(str)
-            {
-                if(str.length == 0)
-                {
-                    document.getElementById("txtHint").innerHTML = "";
-                    return;
-                }
-                else
-                {
-                    var xmlhttp = new XMLHttpRequest();
-                    xmlhttp.onreadystatechange = function()
-                    {
-                        if(this.readyState == 4 && this.status == 200)
-                        {
-                            document.getElementById("txtHint").innerHTML = this.responseText;
-                        }
-                    };
-                    xmlhttp.open("GET", "vorschlaege.php?q=" + str, true);
-                    xmlhttp.send();
-                }
-            }
-
-            //Mixer
-            function zutatHinzufuegen()
-            {
-                var menge = document.getElementById("textFieldMenge").value;
-                var zutat = document.getElementById("textFieldZutat").value;
-
-                if(zutat.length != 0 && menge.length != 0)
-                {
-                    document.getElementById("zutat" + zaehler).innerHTML = menge + " " + zutat;
-                    zaehler++;
-                }     
-
-                //Zutaten und Mengen hinzufügen
-                zutaten.push(zutat);
-                mengen.push(menge);    
-            }
-
-            function mixerLeeren()
-            {
-                //Arrays löschen und Zähler zurücksetzen
-                zutaten = [];
-                mengen = [];
-                zaehler = 1;
-
-                for(var i = 1; i <= 10; i++)
-                {
-                    document.getElementById("zutat" + i).innerHTML = "";
-                }
-            }
-        </script>
     </body>
 </html>

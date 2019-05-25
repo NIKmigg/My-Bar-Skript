@@ -145,6 +145,10 @@
         text-align: center;
     }
 
+    #navButtonsAb {
+        display: none;
+    }
+
     /* Andere Styles (Selbsterklärend) */
     footer {
         background-color: dimgray;
@@ -416,6 +420,24 @@
         background-color: lightgray;
         margin: 10px;
         width: auto;
+        height: 50px;
+    }
+
+    #textFieldName {
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: lightgray;
+        margin: 10px;
+        width: auto;
+        height: 50px;
+    }
+
+    #textFieldAnleitung {
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: lightgray;
+        margin: 10px;
+        width: 70%;
         height: 50px;
     }
 

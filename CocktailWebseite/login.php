@@ -26,4 +26,7 @@
         $errorMessage = "E-Mail oder Passwort ungültig!<br>";
         echo $errorMessage;    
     }
+
+    //Cookie setzen
+    setcookie("user", $_SESSION['name'], time() + (3600*24), "/");
 ?>
