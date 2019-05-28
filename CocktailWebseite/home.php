@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="javascript.js"></script>
     </head>
-    <body>
+    <body onload="check()">
         <!-- Die Überschrift, evtl ein Logo oder so -->
         <div class="logo">
             <div class="container-fluid text-center">
@@ -34,9 +35,16 @@
                     <li><a href="mixer.php">Mixer</a></li>
                     <li><a href="eigeneRezepte.php">Eigene Rezepte</a></li>
                 </ul>
-                <div class="btn-group navbar-right">
-                    <button class="btn navbar-btn" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-user"></span> Registrieren</button>
-                    <button class="btn navbar-btn" onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Einloggen</button>
+                <div id="navButtonsAnReg">
+                    <div class="btn-group navbar-right">
+                        <button class="btn navbar-btn" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-user"></span> Registrieren</button>
+                        <button class="btn navbar-btn" onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Einloggen</button>
+                    </div>
+                </div>
+                <div id="navButtonsAb">
+                    <div class="btn-group navbar-right">
+                        <button class="btn navbar-btn" onclick="abmelden()"><span class="glyphicon glyphicon-log-out"></span> Ausloggen</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -112,6 +120,7 @@
                     </p>
                 </p>
             </div>
+            <div id="snackbar"></div>
         </div>
 
         <!-- Registrieren -->
@@ -119,21 +128,21 @@
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Schließen">&times;</span>
             <form class="modalRegAnm-content" method="POST" action="registrieren.php">
               <div class="reg-container">
+                <input type="text" name="seite" value="home.php" style="display:none">
                 <h1>Registrieren</h1>
                 <p>Bitte geben Sie Ihre Daten an!</p>
                 <hr>
                 <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" name="name" required>
-
+                <input type="text" placeholder="Enter Name" name="name" required>   
                 <label for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
-          
+
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-          
+
                 <label for="psw-repeat"><b>Passwort wiederholen</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-          
+
                 <div class="clearfix">
                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
                   <button type="submit" class="signupbtn">Registrieren</button>
@@ -147,6 +156,7 @@
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Schließen">&times;</span>
             <form class="modalRegAnm-content" method="POST" action="login.php">
                 <div class="anm-container">
+                    <input type="text" name="seite" value="home.php" style="display:none">
                     <h1>Anmelden</h1>
                     <p>Bitte geben Sie Ihre Daten an!</p>
                     <hr>
@@ -189,23 +199,5 @@
                 </div>
             </div>
         </footer>
-        
-        <script>
-            var modal1 = document.getElementById('id01');
-            var modal2 = document.getElementById('id02');
-            
-            // Schließen beim klicken außerhalb der Box
-            window.onclick = function(event) 
-            {
-                if (event.target == modal1) 
-                {
-                    modal1.style.display = "none";
-                }
-                else if (event.target == modal2) 
-                {
-                    modal2.style.display = "none";
-                }
-            }
-        </script>
     </body>
 </html>

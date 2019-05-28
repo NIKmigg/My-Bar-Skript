@@ -12,7 +12,7 @@
         <script src="javascript.js"></script>
     
     </head>
-    <body onload="navButtons()">
+    <body onload="check()">
         <!-- Die Überschrift, evtl ein Logo oder so -->
         <div class="logo">
             <div class="container-fluid text-center">
@@ -94,32 +94,34 @@
                     <button type="submit" class="sucheButton" onclick="rezeptSpeichern()"><span>Speichern</span></button>
                 </div>
             </div>
+            <div id="snackbar"></div>
         </div>
 
         <!-- Registrieren -->
         <div id="id01" class="modalRegAnm">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Schließen">&times;</span>
             <form class="modalRegAnm-content" method="POST" action="registrieren.php">
-              <div class="reg-container">
-                <h1>Registrieren</h1>
-                <p>Bitte geben Sie Ihre Daten an!</p>
-                <hr>
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" name="name" required>
+                <div class="reg-container">
+                    <input type="text" name="seite" value="mixer.php" style="display:none">
+                    <h1>Registrieren</h1>
+                    <p>Bitte geben Sie Ihre Daten an!</p>
+                    <hr>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" required>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-          
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-          
-                <label for="psw-repeat"><b>Passwort wiederholen</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-          
-                <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
-                  <button type="submit" class="signupbtn">Registrieren</button>
-                </div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                    <label for="psw-repeat"><b>Passwort wiederholen</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            
+                    <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+                    <button type="submit" class="signupbtn">Registrieren</button>
+                    </div>
               </div>
             </form>
         </div>
@@ -129,6 +131,7 @@
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Schließen">&times;</span>
             <form class="modalRegAnm-content" method="POST" action="login.php">
                 <div class="anm-container">
+                    <input type="text" name="seite" value="mixer.php" style="display:none">
                     <h1>Anmelden</h1>
                     <p>Bitte geben Sie Ihre Daten an!</p>
                     <hr>

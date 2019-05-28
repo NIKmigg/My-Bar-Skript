@@ -6,6 +6,7 @@
     $passwort = $_POST['psw'];
     $name = $_POST['name'];
     $passwortrepeat = $_POST['psw-repeat'];
+    $vorherigeSeite = $_POST['seite'];
 
     if(strcmp($passwort, $passwortrepeat) == 0)
     {
@@ -17,7 +18,7 @@
         {
             $statement2 = $pdo->prepare("INSERT INTO nutzerdaten (Name, Email, Passwort) VALUES(?, ?, ?)");
             $statement2->execute(array($name, $email, $passwort));
-            header("location:home.php");          
+            header("location:" . $vorherigeSeite);          
         }
         else
         {

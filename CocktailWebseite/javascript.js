@@ -3,6 +3,7 @@ var modal2 = document.getElementById('id02');
 var zaehler = 1;
 //Array für Zutaten und Mengen
 var zutaten = [];
+var angemeldet = false;
             
 // Schließen beim klicken außerhalb der Box
 window.onclick = function(event) 
@@ -42,20 +43,23 @@ function showZutat(str)
 //Mixer
 function zutatHinzufuegen()
 {
-    var menge = document.getElementById("textFieldMenge").value;
-    var zutat = document.getElementById("textFieldZutat").value;
-
     //Testen ob man angemeldet ist
     checkCookie();
 
-    //Hinzufügen
-    if(zutat.length != 0 && menge.length != 0)
+    if(angemeldet == true)
     {
-        document.getElementById("zutat" + zaehler).innerHTML = menge + " " + zutat;
-        //Zutaten und Mengen hinzufügen
-        zutaten.push(menge + " " + zutat);
-        zaehler++;
-    }             
+        var menge = document.getElementById("textFieldMenge").value;
+        var zutat = document.getElementById("textFieldZutat").value;
+    
+        //Hinzufügen
+        if(zutat.length != 0 && menge.length != 0)
+        {
+            document.getElementById("zutat" + zaehler).innerHTML = menge + " " + zutat;
+            //Zutaten und Mengen hinzufügen
+            zutaten.push(menge + " " + zutat);
+            zaehler++;
+        } 
+    }        
 }
 
 function checkCookie()
@@ -64,7 +68,12 @@ function checkCookie()
 
     if(user == "")
     {
-        alert("Du musst dich erst Anmelden!");
+        snackbar("Du musst dich erst anmelden!");
+        angemeldet = false;
+    }
+    else
+    {
+        angemeldet = true;
     }
 }
 
@@ -95,6 +104,8 @@ function mixerLeeren()
     zutaten = [];
     zaehler = 1;
 
+    snackbar("Mixer geleert!");
+
     for(var i = 1; i <= 10; i++)
     {
         document.getElementById("zutat" + i).innerHTML = "";
@@ -103,37 +114,45 @@ function mixerLeeren()
 
 function rezeptSpeichern()
 {
-    var bezeichnung = document.getElementById("textFieldName").value;
-    var anleitung = document.getElementById("textFieldAnleitung").value;
-    // var art = document.getElementById("textFieldArt").value;
-    // var bild;
-                
-    // var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung + "&zutat1=" + zutaten[0] + "&zutat2=" + zutaten[1] + "&zutat3=" + zutaten[2];
-    var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung;
-    var top = zutaten.length - 1;
+    checkCookie();
 
-    var j = 1;
-    for(var i = 0; i <= top; i++)
+    if(angemeldet == true)
     {
-        uebergabe += "&zutat" + j + "=" + zutaten[i];
-        j++;
+        var bezeichnung = document.getElementById("textFieldName").value;
+        var anleitung = document.getElementById("textFieldAnleitung").value;
+        // var art = document.getElementById("textFieldArt").value;
+        // var bild;
+
+        // var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung + "&zutat1=" + zutaten[0] + "&zutat2=" + zutaten[1] + "&zutat3=" + zutaten[2];
+        var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung;
+        var top = zutaten.length - 1;
+
+        
+
+        var j = 1;
+        for(var i = 0; i <= top; i++)
+        {
+            uebergabe += "&zutat" + j + "=" + zutaten[i];
+            j++;
+        }
+
+
+        if (window.XMLHttpRequest) 
+        {
+            xmlhttp = new XMLHttpRequest();
+        } 
+        else 
+        {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.open("POST", "rezeptSpeichernDb.php", false);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.setRequestHeader("Content-length", uebergabe.length);
+        xmlhttp.send(uebergabe);
+        //alert(uebergabe);
+        snackbar("Rezept gespeichert!");
     }
-
-
-    if (window.XMLHttpRequest) 
-    {
-        xmlhttp = new XMLHttpRequest();
-    } 
-    else 
-    {
-    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-
-    xmlhttp.open("POST", "rezeptSpeichernDb.php", false);
-    xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    xmlhttp.setRequestHeader("Content-length", uebergabe.length);
-    xmlhttp.send(uebergabe);
-    alert(uebergabe);
 }
 
 function navButtons()
@@ -153,6 +172,8 @@ function abmelden()
     document.getElementById("navButtonsAnReg").style.display='block';
     document.getElementById("navButtonsAb").style.display='none';
 
+    snackbar("Erfolgreich abgemeldet!");
+
     if (window.XMLHttpRequest) 
     {
         xmlhttp = new XMLHttpRequest();
@@ -165,4 +186,22 @@ function abmelden()
     xmlhttp.open("GET", "logout.php", true);
     xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     xmlhttp.send();
+}
+
+function snackbar(nachricht)
+{
+    var x = document.getElementById("snackbar");
+    x.innerHTML = nachricht;
+
+    x.className = "show";
+
+    setTimeout(function()
+    { 
+        x.className = x.className.replace("show", ""); 
+    }, 3000);
+}
+
+function check()
+{
+    navButtons();
 }

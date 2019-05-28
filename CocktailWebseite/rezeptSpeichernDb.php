@@ -19,5 +19,4 @@
     $statement = $pdo->prepare("INSERT INTO eigenesrezept (user, bezeichnung, anleitung, zutat1, zutat2, zutat3, zutat4, zutat5, zutat6, zutat7, zutat8, zutat9, zutat10) 
                                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $statement->execute(array($nutzer, $bezeichnung, $anleitung, $zutat1, $zutat2, $zutat3, $zutat4, $zutat5, $zutat6, $zutat7, $zutat8, $zutat9, $zutat10));
-
 ?>
