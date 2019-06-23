@@ -121,10 +121,15 @@ function rezeptSpeichern()
         var bezeichnung = document.getElementById("textFieldName").value;
         var anleitung = document.getElementById("textFieldAnleitung").value;
         // var art = document.getElementById("textFieldArt").value;
-        // var bild;
+        var bild = document.getElementById("textFieldBild").value;;
+
+        if(bild == "")
+        {
+            bild = "images/platzhalter.jpg";
+        }
 
         // var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung + "&zutat1=" + zutaten[0] + "&zutat2=" + zutaten[1] + "&zutat3=" + zutaten[2];
-        var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung;
+        var uebergabe = "&bezeichnung=" + bezeichnung + "&anleitung=" + anleitung + "&bild=" + bild;
         var top = zutaten.length - 1;
 
         
@@ -199,6 +204,37 @@ function snackbar(nachricht)
     { 
         x.className = x.className.replace("show", ""); 
     }, 3000);
+}
+
+function rezeptLaden()
+{
+    navButtons();
+    checkCookie();
+
+    if(angemeldet == true)
+    {
+        if (window.XMLHttpRequest) 
+        {
+            xmlhttp = new XMLHttpRequest();
+        } 
+        else 
+        {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+    
+        xmlhttp.onreadystatechange = function()
+            {
+                if(this.readyState == 4 && this.status == 200)
+                {
+                    document.getElementById("txtRezept").innerHTML = this.responseText;
+                    //document.getElementsByClassName("col-sm-12").innerHTML = this.responseText;
+                }
+            };
+    
+        xmlhttp.open("GET", "rezeptLaden.php", true);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.send();
+    }  
 }
 
 function check()

@@ -11,7 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="javascript.js"></script>
     </head>
-    <body onload="check()">
+    <body onload="rezeptLaden()">
         <!-- Die Überschrift, evtl ein Logo oder so -->
         <div class="logo">
             <div class="container-fluid text-center">
@@ -55,7 +55,7 @@
                 <h1>Eigene Rezepte</h1>
             </div>
             <div class="col-sm-12">
-                <p>
+                <p id="txtRezept">
                     
                 </p>
             </div>

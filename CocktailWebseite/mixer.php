@@ -91,6 +91,8 @@
                     Anleitung:<br> <input type="text" id="textFieldAnleitung" placeholder="z.B. Fülle 2 cl Vodka mit Eiswürfel ...">
                     <br>
                     <!-- Bild: -->
+                    Bild:<br> <input type="text" id="textFieldBild" placeholder="z.B. http://www.meinBild.de/">
+                    <br>
                     <button type="submit" class="sucheButton" onclick="rezeptSpeichern()"><span>Speichern</span></button>
                 </div>
             </div>

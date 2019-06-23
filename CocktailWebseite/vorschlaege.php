@@ -60,5 +60,5 @@
             }
         }
     }
-    echo $hint == "" ? "keine Zutat gefunden!" : $hint;
+    echo $hint == "" ? "Keine Zutat gefunden!" : $hint;
 ?>

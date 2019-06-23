@@ -4,6 +4,7 @@
 
     $email = $_POST['email'];
     $passwort = $_POST['psw'];
+    $vorherigeSeite = $_POST['seite'];
 
     $statement = $pdo->prepare("SELECT * from nutzerdaten WHERE Email = :email");
     $result = $statement->execute(array('email' => $email));
@@ -16,12 +17,12 @@
         $_SESSION['email'] = $user['Email'];
         $_SESSION['passwort'] = $user['Passwort'];
         
-        header('location:home.php');
+        header("location:" . $vorherigeSeite); 
     }    
     else
     {
         sleep(5);
-        header('location:home.php');
+        header("location:" . $vorherigeSeite); 
 
         $errorMessage = "E-Mail oder Passwort ungültig!<br>";
         echo $errorMessage;    
